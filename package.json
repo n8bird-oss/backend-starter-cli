@@ -4,15 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "preinstall": "command -v pnpm || npm install -g pnpm",
-    "install:ci": "pnpm install --frozen-lockfile",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
-  "packageManager": "pnpm@latest",
   "engines": {
-    "node": ">=16.0.0",
-    "pnpm": ">=7.0.0"
+    "node": ">=16.0.0"
   },
   "keywords": [
     "backend",

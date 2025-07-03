@@ -17,17 +17,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v2
-      with:
-        version: latest
+        cache: 'npm'
         
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: npm ci
       
     - name: Run linting
-      run: pnpm run lint
+      run: npm run lint
       
     - name: Run formatting check
-      run: pnpm run format --check
+      run: npm run format -- --check

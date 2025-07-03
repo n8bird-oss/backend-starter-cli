@@ -94,10 +94,20 @@ cd my-awesome-backend
 
 #### 3. Install Dependencies
 
-If you didn't install dependencies during setup, you can do so manually:
+Install dependencies using your preferred package manager:
 
 ```bash
+# Using npm
 npm install
+
+# Using yarn
+yarn install
+
+# Using pnpm
+pnpm install
+
+# Using bun
+bun install
 ```
 
 #### 4. Start Building 🚀
@@ -122,8 +132,8 @@ my-awesome-backend/
 
 ## Requirements
 
-- Node.js >= 20.0.0
-- npm >= 10.0.0 or higher
+- Node.js >= 16.0.0
+- Any package manager (npm, yarn, pnpm, or bun)
 
 ---
 
