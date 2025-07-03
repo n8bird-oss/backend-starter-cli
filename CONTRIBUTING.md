@@ -5,18 +5,15 @@ We welcome contributions to the Backend-Starter-CLI project! Whether it's fixing
 ## How to Contribute
 
 1. **Fork the Repository**
-
    - Navigate to the [Backend-Starter-CLI repository](https://github.com/abdullah4tech/backend-starter-cli) and click the "Fork" button.
 
 2. **Clone Your Fork**
-
    - Clone your forked repository to your local machine:
      ```bash
      git clone https://github.com/<your-username>/backend-starter-cli.git
      ```
 
 3. **Set Up the Project**
-
    - Install dependencies:
      ```bash
      npm install
@@ -27,26 +24,22 @@ We welcome contributions to the Backend-Starter-CLI project! Whether it's fixing
      ```
 
 4. **Create a Branch**
-
    - Create a new branch for your contribution:
      ```bash
      git checkout -b feature/your-feature-name
      ```
 
 5. **Make Changes**
-
    - Implement your changes, adhering to the project's coding standards.
    - If you're fixing a bug or adding a feature, write tests to ensure your changes work as expected.
 
 6. **Run Tests**
-
    - Verify your changes by running the test suite:
      ```bash
      npm test
      ```
 
 7. **Commit Your Changes**
-
    - Write clear and concise commit messages following the format:
      ```bash
      feat: add feature description
@@ -59,14 +52,12 @@ We welcome contributions to the Backend-Starter-CLI project! Whether it's fixing
      ```
 
 8. **Push Your Branch**
-
    - Push your changes to your forked repository:
      ```bash
      git push origin feature/your-feature-name
      ```
 
 9. **Submit a Pull Request**
-
    - Navigate to the original [Backend-Starter-CLI repository](https://github.com/abdullah4tech/backend-starter-cli) and click on "New Pull Request."
    - Provide a detailed description of your changes and link to any relevant issues.
 
@@ -89,7 +80,6 @@ If you encounter a bug or have a feature request, please [open an issue](https:/
 Feel free to reach out for help or discussions:
 
 - Email: abdullahmu4life@gmail.com
-- Twitter: [abdullah4tech_](https://twitter.com/Abdullah's) X account handle
+- Twitter: [abdullah4tech\_](https://twitter.com/Abdullah's) X account handle
 
 Thank you for contributing to Backend-Starter-CLI! Your efforts help make this project better for everyone.
-
