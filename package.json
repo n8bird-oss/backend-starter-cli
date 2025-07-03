@@ -4,7 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "preinstall": "command -v pnpm || npm install -g pnpm"
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "keywords": [
     "backend",
@@ -20,5 +24,10 @@
   "dependencies": {
     "chalk": "^5.4.1",
     "inquirer": "^12.3.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2"
   }
 }

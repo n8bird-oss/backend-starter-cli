@@ -28,11 +28,13 @@ To use the `backend-starter` CLI, first ensure you have [Node.js](https://nodejs
 ### Global Installation
 
 Install the package globally using npm:
+
 ```bash
 npm install -g backend-starter-cli
 ```
 
 Now you can use the CLI anywhere with:
+
 ```bash
 backend-starter-cli
 ```
@@ -40,6 +42,7 @@ backend-starter-cli
 ### One-Time Use with NPX
 
 Alternatively, you can use it without installation via npx:
+
 ```bash
 npx backend-starter-cli
 ```
@@ -51,11 +54,13 @@ npx backend-starter-cli
 ### Starting a New Project
 
 Run the CLI and follow the interactive prompts:
+
 ```bash
 backend-starter-cli
 ```
 
 You will be asked to provide the following details:
+
 - **Project Name**: The name of your new project.
 - **Initialize Git**: Whether to initialize a Git repository.
 - **Framework**: Select your preferred backend framework.
@@ -64,10 +69,13 @@ You will be asked to provide the following details:
 ### Example Workflow
 
 #### 1. Scaffold a Project
+
 ```bash
 backend-starter-cli
 ```
-*Example prompt interaction:*
+
+_Example prompt interaction:_
+
 ```
 ? Enter your project name: my-awesome-backend
 ? Do you want to Initialize git? (Y/n) Yes
@@ -79,17 +87,31 @@ backend-starter-cli
 ```
 
 #### 2. Navigate to Your New Project
+
 ```bash
 cd my-awesome-backend
 ```
 
 #### 3. Install Dependencies
-If you didn't install dependencies during setup, you can do so manually:
+
+Install dependencies using your preferred package manager:
+
 ```bash
+# Using npm
 npm install
+
+# Using yarn
+yarn install
+
+# Using pnpm
+pnpm install
+
+# Using bun
+bun install
 ```
 
 #### 4. Start Building 🚀
+
 Start coding with your generated boilerplate!
 
 ---
@@ -97,6 +119,7 @@ Start coding with your generated boilerplate!
 ## Project Structure
 
 Below is an example structure of a project generated with the **Express** framework:
+
 ```
 my-awesome-backend/
 ├── .env                 # Environment variables
@@ -109,8 +132,8 @@ my-awesome-backend/
 
 ## Requirements
 
-- Node.js >= 20.0.0
-- npm >= 10.0.0 or higher
+- Node.js >= 16.0.0
+- Any package manager (npm, yarn, pnpm, or bun)
 
 ---
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+'use strict';
 
 import inquirer from 'inquirer';
 import chalk from 'chalk';
@@ -51,7 +51,8 @@ async function setupProject() {
         {
           type: 'confirm',
           name: 'createEnvFile',
-          message: 'Do you want to create an .env file for your database configuration?',
+          message:
+            'Do you want to create an .env file for your database configuration?',
           default: true,
         },
       ]);
@@ -62,7 +63,9 @@ async function setupProject() {
 
     // Create project directory
     if (fs.existsSync(projectPath)) {
-      console.log(chalk.red(`Directory "${projectName}" already exists! Exiting.`));
+      console.log(
+        chalk.red(`Directory "${projectName}" already exists! Exiting.`)
+      );
       process.exit(1);
     }
     fs.mkdirSync(projectPath);
@@ -84,22 +87,22 @@ async function setupProject() {
         dev: 'node index.js',
         start: 'node index.js',
         format: 'prettier --write *.js',
-        lint: 'eslint *.js --fix'
+        lint: 'eslint *.js --fix',
       },
       dependencies: {},
       devDependencies: {
-        "prettier": "latest",
-        "eslint": "latest"
+        prettier: 'latest',
+        eslint: 'latest',
       },
       type: 'module',
       keywords: [],
-      author: "",
-      license: "ISC",
+      author: '',
+      license: 'ISC',
       description: '',
     };
 
-    dependencies[framework].forEach(dep => {
-      packageJson.dependencies[dep] = "latest"; // Add framework dependencies
+    dependencies[framework].forEach((dep) => {
+      packageJson.dependencies[dep] = 'latest'; // Add framework dependencies
     });
 
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
@@ -137,7 +140,10 @@ app.listen(3000, () => {
 });
 `,
     };
-    fs.writeFileSync(path.join(projectPath, 'index.js'), boilerplate[framework]);
+    fs.writeFileSync(
+      path.join(projectPath, 'index.js'),
+      boilerplate[framework]
+    );
 
     if (addDatabase) {
       const envContent = `
@@ -153,8 +159,11 @@ DB_NAME=database_name
 
     // Git initialization
     if (versionControl) {
-      execSync(`git init ${projectName} > /dev/null 2>&1`)
-      fs.writeFileSync(path.join(projectPath, '.gitignore'), 'node_modules\n.env\n');
+      execSync(`git init ${projectName} > /dev/null 2>&1`);
+      fs.writeFileSync(
+        path.join(projectPath, '.gitignore'),
+        'node_modules\n.env\n'
+      );
     }
 
     // Write Prettier configuration
@@ -184,7 +193,7 @@ DB_NAME=database_name
         semi: ['error', 'always'],
       },
     };
-    
+
     fs.writeFileSync(
       path.join(projectPath, '.prettierrc.json'),
       JSON.stringify(prettierConfig, null, 2)
@@ -195,7 +204,7 @@ DB_NAME=database_name
       JSON.stringify(eslintConfig, null, 2)
     );
 
-    console.log(chalk.white(`\nScaffolding project in ${projectPath}`))
+    console.log(chalk.white(`\nScaffolding project in ${projectPath}`));
 
     console.log(`
 Done. Now run:
