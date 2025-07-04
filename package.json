@@ -1,6 +1,6 @@
 {
   "name": "backend-starter-cli",
-  "version": "1.0.3",
+  "version": "4.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,14 +9,36 @@
   "keywords": [
     "backend",
     "starter-kit",
-    "backend-starter-cli"
+    "backend-starter-cli",
+    "python",
+    "nodejs",
+    "java",
+    "golang",
+    "go",
+    "flask",
+    "django",
+    "fastapi",
+    "express",
+    "nestjs",
+    "koa",
+    "spring-boot",
+    "quarkus",
+    "micronaut",
+    "gin",
+    "echo",
+    "fiber",
+    "maven",
+    "go-modules",
+    "scaffolding",
+    "boilerplate",
+    "multi-language"
   ],
   "bin": {
     "backend-starter-cli": "bin/index.js"
   },
   "author": "Abdullah O. Mustapha",
   "license": "MIT",
-  "description": "Backend Starter CLI is a command-line tool that helps developers quickly set up a backend project with popular frameworks like Express, NestJS, and Koa",
+  "description": "Backend Starter CLI is a command-line tool that helps developers quickly set up backend projects with popular frameworks including Node.js (Express, NestJS, Koa), Python (Flask, Django, FastAPI), Java (Spring Boot, Quarkus, Micronaut), and Go (Gin, Echo, Fiber) with database support and development tools",
   "dependencies": {
     "chalk": "^5.4.1",
     "inquirer": "^12.3.2"
